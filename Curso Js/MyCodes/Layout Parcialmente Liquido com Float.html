@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Layout Parcialmente Liquido com Float</title>
+	<link rel="shortcut icon" href="d20.ico" type="image/x-icon" />
+	<style type="text/css">
+		div {
+			border: solid gray;
+			margin: 5px;
+			padding: 5px;
+		}
+
+		#a {background-color: aquamarine;}
+
+		#b {
+			background-color: coral;
+			float: left;
+			width: 230px;
+			margin-top: 0;
+		}
+
+		#c {
+			background-color: darkcyan;
+			margin-left: 252px;
+			margin-right: 252px;
+		}
+
+		#d {
+			background-color: darksalmon;
+			float: right;
+			width: 230px;
+			margin-top: 0;
+		}
+
+		#e {
+			background-color: darkseagreen;
+			text-align: center;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="a"><h1>Titulo</h1><h2>Sub-Titulo</h2></div>
+
+	<div id="b">
+		<h3>Bloco Esquerdo</h3>
+		<p>A morja nao vai te fazer mal lagu meu amigo camarada, colega meu chapa</p>
+	</div>
+
+	<div id="d">
+		<h3>Bloco Direito</h3>
+		<p>Mais um paragrafo atoa de teste para tetstar o meu html e css pq sim</p>
+		<p>Aqui vou eu mais uma vex faxendo outro pafragafo atoa meu maigo</p>
+	</div>
+
+	<div id="c">
+		<h3>Bloco Central</h3>
+		<p>Este aqui é do bloco central e dessa vex eu quis fazer assim pq eu sou foda!!!</p>
+	</div>
+
+	<div id="e">&copy; Tiago</div>
+</body>
+</html>

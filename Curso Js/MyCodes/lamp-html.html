@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Desafios</title>
+	<style type="text/css">
+		body {
+			text-align: center;
+			font: normal 20pt Arial;
+		}
+	</style>
+</head>
+<body>
+	<h1>Lampada</h1>
+	<img src="lamp-apagada.png">
+
+	<script type="text/javascript">
+		var lampada = document.querySelector('img')
+		var stats = false
+		lampada.addEventListener('mouseover', ascender)
+		lampada.addEventListener('mouseout', apagar)
+
+		function ascender() {
+			if (!stats) {
+				lampada.src = 'lamp-acessa.png'
+				stats = true
+			}
+		}
+		function apagar() {
+			if (stats) {
+				lampada.src = 'lamp-apagada.png'
+				stats = false
+			}
+		}
+	</script>
+</body>
+</html>
